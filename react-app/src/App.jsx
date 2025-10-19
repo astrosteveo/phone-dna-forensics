@@ -18,9 +18,6 @@ import './App.css'
 function MainSite({ particlesInit, particlesConfig }) {
   return (
     <div className="app">
-      <div style={{position: 'fixed', top: 0, left: 0, background: 'red', color: 'white', padding: '10px', zIndex: 99999}}>
-        DEBUG: MAIN SITE RENDERING
-      </div>
       {particlesInit && (
         <Particles
           id="tsparticles"
@@ -118,8 +115,6 @@ function App() {
 
   // Check if we're on the dashboard route
   const isDashboard = location.pathname === '/dashboard'
-
-  console.log('Current location:', location.pathname, 'isDashboard:', isDashboard)
 
   return (
     <>
