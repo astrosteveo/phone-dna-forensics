@@ -15,7 +15,7 @@
 - 🎭 3D hover effects on visualizations
 
 ### 💼 NEW: PhoneDNA Pro Dashboard!
-**[Access the Professional Dashboard →](https://astrosteveo.github.io/phone-dna-forensics/dashboard)**
+**[Access the Professional Dashboard →](https://astrosteveo.github.io/phone-dna-forensics/#/dashboard)**
 
 An absurdly professional enterprise-grade analytics dashboard that looks like a $50k/year SaaS product... but analyzes your phone as a LIVING BIOLOGICAL ORGANISM.
 
