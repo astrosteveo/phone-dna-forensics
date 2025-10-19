@@ -85,3 +85,55 @@ section {
     font-size: 1.5em;
   }
 }
+
+/* Floating Buttons */
+.floating-dashboard-btn,
+.floating-home-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.floating-btn-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  background: linear-gradient(135deg, #00ff41 0%, #00cc33 100%);
+  color: #000000;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0, 255, 65, 0.3);
+  transition: all 0.3s;
+}
+
+.floating-btn-content.small {
+  padding: 16px;
+  border-radius: 50%;
+}
+
+.floating-btn-content:hover {
+  background: linear-gradient(135deg, #00cc33 0%, #00aa2a 100%);
+  box-shadow: 0 6px 30px rgba(0, 255, 65, 0.5);
+}
+
+@media (max-width: 768px) {
+  .floating-dashboard-btn,
+  .floating-home-btn {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .floating-btn-content span {
+    display: none;
+  }
+
+  .floating-btn-content {
+    padding: 16px;
+    border-radius: 50%;
+  }
+}
