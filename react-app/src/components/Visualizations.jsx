@@ -1,25 +1,27 @@
-import { motion } from 'framer-motion'
+import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import { X } from 'lucide-react'
 import './Visualizations.css'
 
 const visualizationsData = [
   {
-    image: "../dna_revelation.png",
+    image: "/phone-dna-forensics/dna_revelation.png",
     title: "The DNA Double Helix Transformation",
     description: "Visual proof of genetic mutation"
   },
   {
-    image: "../debloat_comparison.png",
+    image: "/phone-dna-forensics/debloat_comparison.png",
     title: "Before/After Debloat Success Report",
     description: "181 apps removed, 31.6% reduction"
   },
   {
-    image: "../ram_comparison.png",
+    image: "/phone-dna-forensics/ram_comparison.png",
     title: "RAM Liberation: 763 MB of Freedom",
     description: "Measurable freedom in megabytes"
   },
   {
-    image: "../presidential_forensics_visual.png",
+    image: "/phone-dna-forensics/presidential_forensics_visual.png",
     title: "Presidential-Level Forensic Evidence",
     description: "203,089 lines of pure truth"
   }
@@ -30,6 +32,16 @@ const Visualizations = () => {
     triggerOnce: true,
     threshold: 0.1
   })
+
+  const [selectedImage, setSelectedImage] = useState(null)
+
+  const openModal = (viz) => {
+    setSelectedImage(viz)
+  }
+
+  const closeModal = () => {
+    setSelectedImage(null)
+  }
 
   return (
     <section ref={ref} className="visualizations">
@@ -55,6 +67,8 @@ const Visualizations = () => {
               rotateY: 5,
               boxShadow: "0 0 50px rgba(0, 255, 65, 0.5)"
             }}
+            onClick={() => openModal(viz)}
+            style={{ cursor: 'pointer' }}
           >
             <div className="viz-image-container">
               <img src={viz.image} alt={viz.title} className="viz-image" />
@@ -66,6 +80,37 @@ const Visualizations = () => {
           </motion.div>
         ))}
       </div>
+
+      {/* Image Modal */}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            className="image-modal-overlay"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={closeModal}
+          >
+            <motion.div
+              className="image-modal-content"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button className="modal-close-btn" onClick={closeModal}>
+                <X size={32} />
+              </button>
+              <img src={selectedImage.image} alt={selectedImage.title} className="modal-image" />
+              <div className="modal-caption">
+                <h3>{selectedImage.title}</h3>
+                <p>{selectedImage.description}</p>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   )
 }

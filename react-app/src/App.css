@@ -30,6 +30,9 @@ body {
 .content {
   position: relative;
   z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /* Smooth scrolling */
@@ -39,8 +42,8 @@ html {
 
 /* Common section styles */
 section {
-  padding: 100px 20px;
-  max-width: 1400px;
+  padding: 80px 20px;
+  width: 100%;
   margin: 0 auto;
 }
 

@@ -8,6 +8,14 @@ const Hero = () => {
     threshold: 0.1
   })
 
+  const scrollToSection = (e, sectionId) => {
+    e.preventDefault()
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -69,6 +77,7 @@ const Hero = () => {
         <motion.div className="cta-buttons" variants={itemVariants}>
           <motion.a
             href="#revelation"
+            onClick={(e) => scrollToSection(e, 'revelation')}
             className="cta-button primary"
             whileHover={{ scale: 1.05, boxShadow: "0 0 30px #00ff41" }}
             whileTap={{ scale: 0.95 }}

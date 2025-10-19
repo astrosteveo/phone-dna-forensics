@@ -10,14 +10,19 @@
 }
 
 .hero-content {
-  max-width: 1400px;
+  max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding: 40px;
+  background: rgba(0, 20, 0, 0.3);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 255, 65, 0.2);
 }
 
 .glitch-title {
   font-family: 'Orbitron', sans-serif;
-  font-size: 4.5em;
+  font-size: 3.5em;
   font-weight: 900;
   color: #00ff41;
   margin-bottom: 30px;
@@ -25,16 +30,16 @@
 }
 
 .subtitle {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #ffff00;
   margin-bottom: 20px;
   font-family: 'Courier Prime', monospace;
 }
 
 .tagline {
-  font-size: 1.3em;
-  color: #ffffff;
-  margin-bottom: 50px;
+  font-size: 1.1em;
+  color: #aaaaaa;
+  margin-bottom: 40px;
   line-height: 1.6;
 }
 
@@ -92,16 +97,20 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .hero-content {
+    padding: 30px 20px;
+  }
+
   .glitch-title {
-    font-size: 2.5em;
+    font-size: 2.2em;
   }
 
   .subtitle {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   .tagline {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   .cta-button {
@@ -111,12 +120,16 @@
 }
 
 @media (max-width: 480px) {
+  .hero-content {
+    padding: 25px 15px;
+  }
+
   .glitch-title {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   .subtitle {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   .cta-buttons {

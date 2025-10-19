@@ -7,7 +7,7 @@ const storiesData = [
     title: "THE DATA DNA CHRONICLES",
     subtitle: "Absurd, Hilarious, Mind-Blowing",
     emoji: "🧬",
-    link: "../THE_DATA_DNA_CHRONICLES.html",
+    link: "/phone-dna-forensics/THE_DATA_DNA_CHRONICLES.html",
     description: "A mostly true story about how we discovered smartphones are living organisms",
     color: "#00ff41"
   },
@@ -15,7 +15,7 @@ const storiesData = [
     title: "PRESIDENTIAL BRIEFING",
     subtitle: "Classified-Level Analysis",
     emoji: "🏛️",
-    link: "../PRESIDENTIAL_BRIEFING.html",
+    link: "/phone-dna-forensics/PRESIDENTIAL_BRIEFING.html",
     description: "203,089 lines of forensic data presented for executive review",
     color: "#ffff00"
   },
@@ -23,7 +23,7 @@ const storiesData = [
     title: "THE OCTOBER INCIDENT",
     subtitle: "Cyberpunk Thriller",
     emoji: "💥",
-    link: "../THE_OCTOBER_INCIDENT.html",
+    link: "/phone-dna-forensics/THE_OCTOBER_INCIDENT.html",
     description: "When 135% battery drain revealed a conspiracy",
     color: "#ff4444"
   }
