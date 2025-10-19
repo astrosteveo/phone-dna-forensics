@@ -2,6 +2,10 @@
 
 > **A mostly true story about how we discovered that smartphones are living organisms and accidentally performed genetic engineering on one.**
 
+## 🌐 [**VIEW THE INTERACTIVE WEBSITE**](https://astrosteveo.github.io/phone-dna-forensics/)
+
+**Live Site:** https://astrosteveo.github.io/phone-dna-forensics/
+
 ## 📱 What Is This?
 
 This repository contains the complete forensic analysis of a Samsung Galaxy S25 Ultra, from initial ADB connection through comprehensive data extraction, analysis, and ultimately a genetic transformation via debloating.
