@@ -125,6 +125,9 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
+      <div style={{position: 'fixed', top: 0, left: 0, background: 'green', color: 'white', padding: '10px', zIndex: 99999}}>
+        DEBUG: DASHBOARD RENDERING
+      </div>
       {/* Header */}
       <header className="dashboard-header">
         <div className="header-content">
