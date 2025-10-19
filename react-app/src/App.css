@@ -84,8 +84,24 @@ section {
 }
 
 @media (max-width: 480px) {
+  section {
+    padding: 50px 16px;
+  }
+
   .section-title {
     font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  section {
+    padding: 40px 12px;
+  }
+
+  .section-title {
+    font-size: 1.4em;
+    margin-bottom: 30px;
   }
 }
 
@@ -138,5 +154,17 @@ section {
   .floating-btn-content {
     padding: 16px;
     border-radius: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .floating-dashboard-btn,
+  .floating-home-btn {
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .floating-btn-content {
+    padding: 14px;
   }
 }

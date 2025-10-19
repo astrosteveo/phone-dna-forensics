@@ -54,8 +54,88 @@
 }
 
 @media (max-width: 768px) {
+  .stories {
+    padding: 80px 20px;
+  }
+
   .stories-grid {
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+
+  .story-card {
+    padding: 35px 25px;
+  }
+
+  .story-title {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 480px) {
+  .stories {
+    padding: 60px 16px;
+  }
+
+  .stories-grid {
+    gap: 24px;
+  }
+
+  .story-card {
+    padding: 30px 20px;
+  }
+
+  .story-emoji {
+    font-size: 3.5em;
+    margin-bottom: 16px;
+  }
+
+  .story-title {
+    font-size: 1.4em;
+    margin-bottom: 8px;
+  }
+
+  .story-subtitle {
+    font-size: 1em;
+    margin-bottom: 16px;
+  }
+
+  .story-description {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  .read-button {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 400px) {
+  .stories {
+    padding: 50px 12px;
+  }
+
+  .stories-grid {
+    gap: 20px;
+  }
+
+  .story-card {
+    padding: 24px 16px;
+  }
+
+  .story-emoji {
+    font-size: 3em;
+  }
+
+  .story-title {
+    font-size: 1.3em;
+  }
+
+  .story-subtitle {
+    font-size: 0.95em;
+  }
+
+  .story-description {
+    font-size: 0.95em;
   }
 }

@@ -26,6 +26,14 @@ const storiesData = [
     link: "/phone-dna-forensics/THE_OCTOBER_INCIDENT.html",
     description: "When 135% battery drain revealed a conspiracy",
     color: "#ff4444"
+  },
+  {
+    title: "THE NOVEMBER MUTATION",
+    subtitle: "Meta-Forensic Documentation",
+    emoji: "📱",
+    link: "/phone-dna-forensics/THE_NOVEMBER_MUTATION.html",
+    description: "Live telemetry from S25 Ultra during mobile UX optimization",
+    color: "#00aaff"
   }
 ]
 
