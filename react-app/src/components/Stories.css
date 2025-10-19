@@ -1,0 +1,61 @@
+.stories {
+  padding: 100px 20px;
+  background: rgba(255, 255, 0, 0.03);
+}
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.story-card {
+  background: rgba(0, 0, 0, 0.95);
+  border: 3px solid;
+  padding: 40px 30px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.story-emoji {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+.story-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.story-subtitle {
+  color: #888888;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.story-description {
+  color: #ffffff;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.read-button {
+  color: #00ff41;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .stories-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

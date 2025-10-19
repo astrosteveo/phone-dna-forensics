@@ -1,0 +1,51 @@
+.chromosomes {
+  padding: 100px 20px;
+  background: rgba(255, 255, 0, 0.05);
+}
+
+.chromosomes-list {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.chromosome-item {
+  background: rgba(0, 0, 0, 0.8);
+  border-left: 5px solid #00ff41;
+  padding: 25px 30px;
+  margin: 20px 0;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.chromosome-item:hover {
+  background: rgba(0, 255, 65, 0.1);
+}
+
+.chromosome-name {
+  font-size: 1.4em;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.chromosome-change {
+  font-size: 2em;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  margin: 10px 0;
+}
+
+.chromosome-classification {
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .chromosome-name {
+    font-size: 1.2em;
+  }
+
+  .chromosome-change {
+    font-size: 1.6em;
+  }
+}

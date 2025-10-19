@@ -1,0 +1,97 @@
+.footer {
+  padding: 80px 20px 40px;
+  background: rgba(0, 0, 0, 0.95);
+  border-top: 3px solid #00ff41;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5em;
+  color: #00ff41;
+  margin-bottom: 30px;
+}
+
+.footer-text {
+  font-size: 1.3em;
+  line-height: 1.8;
+  color: #ffffff;
+  margin: 25px 0;
+}
+
+.footer-worth-it {
+  font-size: 1.4em;
+  margin: 40px 0;
+  line-height: 1.6;
+}
+
+.footer-divider {
+  width: 200px;
+  height: 2px;
+  background: #00ff41;
+  margin: 50px auto;
+}
+
+.footer-dna {
+  margin: 40px 0;
+}
+
+.dna-statement {
+  font-size: 1.5em;
+  color: #00ff41;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.dna-subtext {
+  color: #888888;
+  font-style: italic;
+  font-size: 1em;
+  line-height: 1.8;
+}
+
+.footer-links {
+  margin: 40px 0 20px;
+}
+
+.footer-link {
+  color: #00ff41;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: all 0.3s;
+}
+
+.footer-link:hover {
+  color: #ffff00;
+  text-shadow: 0 0 10px #ffff00;
+}
+
+.separator {
+  color: #888888;
+  margin: 0 15px;
+}
+
+.footer-copyright {
+  color: #666666;
+  font-size: 0.9em;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .footer-title {
+    font-size: 2em;
+  }
+
+  .footer-text {
+    font-size: 1.1em;
+  }
+
+  .dna-statement {
+    font-size: 1.2em;
+  }
+}
