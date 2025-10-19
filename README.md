@@ -2,9 +2,17 @@
 
 > **A mostly true story about how we discovered that smartphones are living organisms and accidentally performed genetic engineering on one.**
 
-## 🌐 [**VIEW THE INTERACTIVE WEBSITE**](https://astrosteveo.github.io/phone-dna-forensics/)
+## 🌐 [**VIEW THE EPIC REACT WEBSITE**](https://astrosteveo.github.io/phone-dna-forensics/)
 
 **Live Site:** https://astrosteveo.github.io/phone-dna-forensics/
+
+### ⚛️ NEW: Completely Redesigned with React!
+- 🎨 Smooth scroll animations with Framer Motion
+- 🌊 Interactive particle network background
+- ⚡ Lightning-fast with Vite
+- 📱 Fully responsive design
+- 🧬 Animated genetic transformations
+- 🎭 3D hover effects on visualizations
 
 ## 📱 What Is This?
 
